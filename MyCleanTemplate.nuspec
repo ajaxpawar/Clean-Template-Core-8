@@ -1,22 +1,22 @@
 <?xml version="1.0"?>
 <package>
   <metadata>
-    <id>MyCleanTemplate</id>
+    <id>Clean.Architecture.Solution.Core.8.Template</id>
     <version>1.0.0</version>
     <title>ASP.NET Core 8 Clean API Template</title>
     <authors>Ajay B. Pawar</authors>
     <description>A clean architecture template for ASP.NET Core 8 APIs, optimized for multi-layered projects.</description>
     <tags>template;clean architecture;ASP.NET Core;dotnet</tags>
+    <readme>contentFiles/any/any/README.md</readme> <!-- Adjusted Path -->
+    <license type="expression">MIT</license>
+    <repository type="git" url="https://github.com/ajaxpawar/Clean-Template-Core-8" />
   </metadata>
   <files>
-    <!-- Include .template.config directory -->
-<file src=".template.config\**\*" target="contentFiles\any\any\.template.config\" />
-
-    <!-- Include solution and project files -->
+    <file src=".template.config\**\*" target="contentFiles\any\any\.template.config\" />
     <file src="MyCleanTemplate.sln" target="contentFiles\any\any\" />
     <file src="**\*.csproj" target="contentFiles\any\any\" />
-
-    <!-- Include all C# files -->
     <file src="**\*.cs" target="contentFiles\any\any\" />
+    <file src="README.md" target="contentFiles\any\any\" />
+    <file src="LICENSE.txt" target="contentFiles\any\any\" />
   </files>
 </package>
