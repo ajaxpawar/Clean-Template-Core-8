@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Ajay B. Pawar",
+  "classifications": ["ASP.NET Core 8 API", "Clean Architecture Template"],
+  "identity": "AspNetCore8.Clean.API.Template.01",
+  "name": "ASP.NET Core 8 Clean API Template",
+  "shortName": "core-8-clean-api",
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "sourceName": "MyCleanTemplate",
+  "symbols": {
+    "Framework": {
+      "type": "parameter",
+      "description": "Select the .NET Framework version",
+      "datatype":"choice",
+      "choices": [
+        {
+          "choice": "net8.0"
+        }
+      ],
+      "defaultValue": "net8.0",
+      "replaces": "{TargetFramework}"
+    },"ServerType": {
+      "type": "parameter",
+      "description": "Select the database server",
+      "datatype":"choice",
+      "choices": [
+        {
+          "choice": "sql"
+        },
+        {
+          "choice": "mysql"
+        }
+      ],
+      "defaultValue": "sql"
+    }
+  }
+  
+}
